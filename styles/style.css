@@ -1,0 +1,23 @@
+
+html, body {
+    height:100%;
+}
+.main-container{
+    min-width: 40rem;
+    margin: auto;
+}
+
+.img-mini{
+    width: 3rem;
+}
+
+.img-normal{
+    width: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container{
+        min-width: 0;
+    }
+    
+}

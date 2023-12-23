@@ -1,0 +1,114 @@
+<div class="mt-2">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="text-center text-muted mt-4">Hola, <span id="nombre-usuario"></span></h3>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-6">
+            <button class="btn btn-outline-success d-flex flex-column align-items-center w-100" data-bs-toggle="modal"
+                data-bs-target="#depositModal">
+                <img src="assets/deposito.png" alt="Depósito" class="img-normal">
+                Depósito
+            </button>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-outline-warning d-flex flex-column align-items-center w-100" data-bs-toggle="modal"
+                data-bs-target="#retirementModal">
+                <img src="assets/retiro.png" alt="Retiro" class="img-normal">
+                Retiro
+            </button>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col">
+            <button class="btn btn-outline-primary d-flex flex-column align-items-center w-100" data-bs-toggle="modal"
+                data-bs-target="#consultModal">
+                <img src="assets/consult.png" alt="Consultar saldo" class="img-normal">
+                Consultar saldo
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center mt-5" id="cerrar-sesion">
+        <button class="btn btn-danger">Cerrar Sesión</button>
+    </div>
+</div>
+
+<!-- Deposit Modal -->
+<div class="modal fade" id="depositModal" role="dialog" tabindex="-1" aria-labelledby="depositModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="depositModalLabel">Depósito</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+
+                    <label for="deposito-input" class="text-center text-muted w-100">Cantidad a depositar:
+                    </label>
+                    <input type="number" name="" id="deposito-input" class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" id="depositar">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Retirement Modal -->
+<div class="modal fade" id="retirementModal" tabindex="-1" role="dialog" aria-labelledby="retirementModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="retirementModalLabel">Retiro</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+
+                    <label for="retiro-input" class="text-center text-muted w-100">Cantidad a retirar:
+                    </label>
+                    <input type="number" name="" id="retiro-input" class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" id="retirar">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Consult Modal -->
+<div class="modal fade" id="consultModal" tabindex="-1" role="dialog" aria-labelledby="consultModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="consultModalLabel">Consultar saldo</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="fs-3">
+                    Su saldo actual es de: <span id="saldo-actual" class="badge bg-primary">$0.00</span>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
