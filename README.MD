@@ -35,8 +35,8 @@ Para usar la aplicación, simplemente inicie sesión con uno de los usuarios dis
 Esta aplicación fue desarrollada en JavaScript y utiliza localStorage para almacenar los datos de los usuarios.
 
 
-# Intendado ser SPA
-El archivo js/components/utils.js contiene la funcion changeComponent(), que realiza una llamada fetch para obtener el correspondiente archivo html de components/ y regresa una promesa
+# Intentandado ser SPA
+El archivo js/utils.js contiene la funcion changeComponent(), que realiza una llamada fetch para obtener el correspondiente archivo html de components/ y regresa una promesa
 La funcion tambien recibe un array de objetos que indican los eventos especificos de ese componente, permitiendo tener control sobre la funcionalidad del mismo.
 
 En la ruta js/components he declarado los modulos que contienen la funcionalida de los componentes.
